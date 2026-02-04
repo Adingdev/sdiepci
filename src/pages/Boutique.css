@@ -1,0 +1,302 @@
+/* ----------------------- Boutique Page ----------------------- */
+.boutique-page {
+  background: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.boutique-hero {
+  background: linear-gradient(135deg, #f5cda3 0%, #e38b6c 100%);
+  padding: 100px 20px 60px;
+  text-align: center;
+}
+
+.boutique-hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #2c2c2c;
+  margin-bottom: 15px;
+}
+
+.boutique-hero p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* ----------------------- Toolbar ----------------------- */
+.boutique-toolbar {
+  padding: 25px 0;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 80px;
+  z-index: 100;
+}
+
+.toolbar-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.search-box {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  background: #f8f9fa;
+  border-radius: 50px;
+  padding: 12px 20px;
+  position: relative;
+}
+
+.search-box svg {
+  color: #999;
+  margin-right: 12px;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  outline: none;
+}
+
+.clear-search {
+  background: none;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.btn-panier {
+  background: #e38b6c;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.2s;
+}
+
+.btn-panier:hover {
+  background: #d96f52;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.btn-panier:active {
+  transform: scale(0.98);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.panier-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #e74c3c;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* ----------------------- Layout ----------------------- */
+.boutique-content {
+  padding: 50px 20px 70px;
+}
+
+.boutique-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+}
+
+/* ----------------------- Sidebar ----------------------- */
+.boutique-sidebar {
+  position: sticky;
+  top: 180px;
+  height: fit-content;
+}
+
+.filter-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.categories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.category-btn {
+  width: 100%;
+  text-align: left;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  background: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.category-btn:hover {
+  border-color: #e38b6c;
+  background: #fff5e6;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+}
+
+.category-btn.active {
+  background: #e38b6c;
+  color: #fff;
+  border-color: #d96f52;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.product-count {
+  background: rgba(0,0,0,0.1);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+}
+
+.category-btn.active .product-count {
+  background: rgba(255,255,255,0.3);
+}
+
+.sidebar-info {
+  margin-top: 30px;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.sidebar-info h4 {
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+
+.sidebar-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-info li {
+  color: #666;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+/* ----------------------- Produits ----------------------- */
+.produits-header {
+  margin-bottom: 30px;
+}
+
+.produits-header h2 {
+  font-size: 1.8rem;
+  color: #2c2c2c;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.produits-count {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.produits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  transition: all 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.product-card img:hover {
+  transform: scale(1.03);
+  filter: brightness(1.05);
+}
+
+.no-products {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+  font-size: 1.1rem;
+}
+
+/* ----------------------- Responsive ----------------------- */
+@media (max-width: 968px) {
+  .boutique-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .boutique-sidebar {
+    position: static;
+  }
+
+  .toolbar-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .search-box {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .boutique-hero {
+    padding: 80px 20px 40px;
+  }
+
+  .boutique-hero h1 {
+    font-size: 2rem;
+  }
+
+  .produits-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+  }
+}

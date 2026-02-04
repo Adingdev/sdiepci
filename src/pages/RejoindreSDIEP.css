@@ -1,0 +1,299 @@
+/* ===============================
+   VARIABLES PRO (ENTREPRISE)
+================================ */
+:root {
+  --primary: #25D366;
+  --primary-dark: #1fa855;
+  --dark: #1f2933;
+  --text: #374151;
+  --gray-bg: #f4f5f7;
+  --border: #d1d5db;
+  --white: #ffffff;
+}
+
+/* ===============================
+   GLOBAL
+================================ */
+.rejoindre-page {
+  background: var(--white);
+  color: var(--text);
+}
+
+section {
+  padding: 70px 20px;
+}
+
+/* ===============================
+   HERO
+================================ */
+.rejoindre-hero {
+  background: var(--dark);
+  padding: 100px 20px 70px;
+  text-align: center;
+}
+
+.rejoindre-hero h1 {
+  font-size: 2.6rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.rejoindre-hero p {
+  font-size: 1.15rem;
+  color: #e5e7eb;
+  margin-bottom: 30px;
+}
+
+.btn-hero-candidature {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-hero-candidature:hover {
+  background: var(--primary-dark);
+}
+
+/* ===============================
+   TITRES SECTIONS
+================================ */
+.section-title-center {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+.section-subtitle-center {
+  text-align: center;
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+/* ===============================
+   INTRODUCTION
+================================ */
+.rejoindre-intro {
+  background: var(--gray-bg);
+}
+
+.intro-content-rejoindre {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.intro-large {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* ===============================
+   BESOINS
+================================ */
+.besoins-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.besoin-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 25px;
+}
+
+.besoin-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--primary);
+  border-radius: 6px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.besoin-card h3 {
+  font-size: 1.3rem;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+.besoin-places {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* ===============================
+   AVANTAGES
+================================ */
+.avantages-section {
+  background: var(--gray-bg);
+}
+
+.avantages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.avantage-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 25px;
+}
+
+.avantage-icon {
+  width: 42px;
+  height: 42px;
+  background: var(--primary);
+  border-radius: 6px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+/* ===============================
+   CONDITIONS
+================================ */
+.conditions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.condition-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  border-radius: 6px;
+  padding: 25px;
+}
+
+.condition-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.condition-card li {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+/* ===============================
+   PROCESSUS
+================================ */
+.processus-section {
+  background: var(--gray-bg);
+}
+
+.processus-timeline {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.processus-item {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.processus-number {
+  width: 40px;
+  height: 40px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.processus-content {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 15px 20px;
+}
+
+/* ===============================
+   TEMOIGNAGES
+================================ */
+.temoignages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.temoignage-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 25px;
+}
+
+.temoignage-stars {
+  color: #f59e0b;
+  margin-bottom: 10px;
+}
+
+/* ===============================
+   CTA FINAL
+================================ */
+.rejoindre-cta {
+  background: var(--dark);
+  color: #fff;
+  text-align: center;
+}
+
+.btn-cta-large {
+  background: var(--primary);
+  color: #fff;
+  padding: 14px 30px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-cta-large:hover {
+  background: var(--primary-dark);
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .rejoindre-hero h1 {
+    font-size: 2rem;
+  }
+
+  .section-title-center {
+    font-size: 1.8rem;
+  }
+}

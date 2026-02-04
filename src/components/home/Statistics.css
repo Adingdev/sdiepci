@@ -1,0 +1,106 @@
+/* ===============================
+   SECTION STATISTICS
+================================ */
+.statistics {
+  position: relative;
+  padding: 90px 0;
+  background-image: url('/images/stats-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+/* Overlay plus sobre */
+.stats-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 26, 26, 0.75);
+  z-index: 1;
+}
+
+.statistics .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* ===============================
+   GRID
+================================ */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 35px;
+}
+
+/* ===============================
+   CARD
+================================ */
+.stat-card {
+  text-align: center;
+  padding: 35px 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* ===============================
+   ICON
+================================ */
+.stat-icon {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #f4a261;
+}
+
+/* ===============================
+   NUMBER & LABEL
+================================ */
+.stat-number {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #e6e6e6;
+  line-height: 1.5;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media screen and (max-width: 768px) {
+  .statistics {
+    padding: 65px 0;
+    background-attachment: scroll;
+  }
+
+  .stats-grid {
+    gap: 25px;
+  }
+
+  .stat-number {
+    font-size: 2.1rem;
+  }
+
+  .stat-label {
+    font-size: 0.9rem;
+  }
+}

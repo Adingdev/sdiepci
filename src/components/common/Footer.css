@@ -1,0 +1,139 @@
+/* ===============================
+   FOOTER BASE
+================================ */
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 60px 0 25px;
+  margin-top: 80px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px;
+}
+
+/* ===============================
+   TITRES
+================================ */
+.footer-section h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #f4a261;
+  margin-bottom: 18px;
+}
+
+/* ===============================
+   LOGO & DESCRIPTION
+================================ */
+.footer-logo img {
+  height: 55px;
+  margin-bottom: 15px;
+}
+
+.footer-description {
+  font-size: 0.9rem;
+  color: #cfcfcf;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* ===============================
+   RÉSEAUX SOCIAUX
+================================ */
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social a {
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+.footer-social a:hover {
+  color: #f4a261;
+}
+
+/* ===============================
+   LIENS
+================================ */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #cfcfcf;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  color: #f4a261;
+}
+
+/* ===============================
+   CONTACT
+================================ */
+.footer-contact p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  color: #cfcfcf;
+}
+
+.footer-icon {
+  color: #f4a261;
+  font-size: 1.1rem;
+}
+
+/* ===============================
+   HORAIRES
+================================ */
+.footer-hours {
+  margin-top: 15px;
+  font-size: 0.85rem;
+  color: #cfcfcf;
+}
+
+.footer-hours p {
+  margin: 4px 0;
+}
+
+/* ===============================
+   FOOTER BOTTOM
+================================ */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 45px 0 20px;
+  }
+
+  .footer-container {
+    gap: 30px;
+    padding: 0 20px;
+  }
+}

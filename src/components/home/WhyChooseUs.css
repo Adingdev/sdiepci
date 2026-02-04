@@ -1,0 +1,91 @@
+/* ===============================
+   WHY CHOOSE US
+================================ */
+.why-choose-us {
+  padding: 90px 0;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+/* ===============================
+   GRID
+================================ */
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+  margin-top: 50px;
+}
+
+/* ===============================
+   CARD
+================================ */
+.reason-card {
+  text-align: center;
+  padding: 35px 25px;
+  background: #222;
+  border-radius: 10px;
+  border: 1px solid #2f2f2f;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.reason-card:hover {
+  background: #262626;
+  transform: translateY(-4px);
+}
+
+/* ===============================
+   ICON
+================================ */
+.reason-icon {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4a261;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+/* ===============================
+   TITLE & TEXT
+================================ */
+.reason-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f4a261;
+  margin-bottom: 12px;
+}
+
+.reason-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #cfcfcf;
+}
+
+/* ===============================
+   SECTION HEADER
+================================ */
+.why-choose-us .section-subtitle {
+  color: #f4a261;
+}
+
+.why-choose-us .section-title {
+  color: #ffffff;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media screen and (max-width: 768px) {
+  .why-choose-us {
+    padding: 65px 0;
+  }
+
+  .reasons-grid {
+    gap: 25px;
+  }
+}

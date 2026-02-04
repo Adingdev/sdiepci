@@ -1,0 +1,520 @@
+/* Portfolio Page - Design concret et professionnel */
+
+.portfolio-page {
+  background: #fff;
+}
+
+/* Hero simple */
+.portfolio-hero {
+  background: #1a1a1a;
+  padding: 100px 0 60px;
+  margin-top: 80px;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.portfolio-hero h1 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.portfolio-hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Intro */
+.portfolio-intro {
+  padding: 40px 0;
+  background: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.intro-text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro-text p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Filtres */
+.portfolio-filters-section {
+  padding: 30px 0;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 80px;
+  z-index: 10;
+}
+
+.filters-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 10px 24px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  color: #666;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  border-color: #f4a261;
+  color: #f4a261;
+}
+
+.filter-btn.active {
+  background: #f4a261;
+  border-color: #f4a261;
+  color: #fff;
+}
+
+.projects-count {
+  color: #999;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+/* Galerie */
+.portfolio-gallery {
+  padding: 50px 0 60px;
+  background: #fff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: #f4a261;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.project-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #f4a261;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-info h3 {
+  font-size: 1.2rem;
+  color: #1a1a1a;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.project-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.project-meta span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.project-meta svg {
+  color: #f4a261;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.modal-container {
+  background: #fff;
+  border-radius: 8px;
+  max-width: 1000px;
+  width: 100%;
+  max-height: 90vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #fff;
+  border: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+.modal-close:hover {
+  background: #f4a261;
+  color: #fff;
+}
+
+.modal-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-height: 90vh;
+}
+
+.modal-image {
+  height: 100%;
+  min-height: 400px;
+  background: #f5f5f5;
+}
+
+.modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-details {
+  padding: 35px;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.modal-details h2 {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.modal-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 6px;
+  border: 1px solid #e8e8e8;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info-label {
+  color: #888;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.info-value {
+  color: #1a1a1a;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.modal-description {
+  margin-bottom: 30px;
+}
+
+.modal-description h4,
+.modal-services h4 {
+  color: #1a1a1a;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.modal-description p {
+  color: #555;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.modal-services ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.modal-services li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #555;
+  font-size: 0.9rem;
+  padding: 10px;
+  background: #f8f8f8;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+}
+
+.modal-services svg {
+  color: #f4a261;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+/* CTA */
+.portfolio-cta {
+  padding: 60px 0;
+  background: #1a1a1a;
+}
+
+.cta-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  background: #2a2a2a;
+  border-radius: 8px;
+}
+
+.cta-text h2 {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.cta-text p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin: 0;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 15px;
+  flex-shrink: 0;
+}
+
+.btn-whatsapp,
+.btn-phone {
+  padding: 14px 30px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: #fff;
+}
+
+.btn-whatsapp:hover {
+  background: #20ba5a;
+}
+
+.btn-phone {
+  background: #f4a261;
+  color: #fff;
+}
+
+.btn-phone:hover {
+  background: #e76f51;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .modal-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-image {
+    min-height: 300px;
+  }
+
+  .modal-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-hero {
+    padding: 80px 0 50px;
+  }
+
+  .portfolio-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .portfolio-hero p {
+    font-size: 1.05rem;
+  }
+
+  .filters-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-buttons {
+    justify-content: center;
+  }
+
+  .projects-count {
+    text-align: center;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-details {
+    padding: 25px 20px;
+  }
+
+  .modal-details h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 25px;
+  }
+
+  .cta-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-whatsapp,
+  .btn-phone {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .filter-btn {
+    padding: 8px 18px;
+    font-size: 0.85rem;
+  }
+
+  .project-image {
+    height: 200px;
+  }
+
+  .modal-close {
+    top: 10px;
+    right: 10px;
+    width: 34px;
+    height: 34px;
+    font-size: 1.1rem;
+  }
+
+  .modal-details {
+    padding: 20px 15px;
+  }
+
+  .modal-info-grid {
+    padding: 15px;
+  }
+
+  .cta-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .cta-text p {
+    font-size: 1rem;
+  }
+}
