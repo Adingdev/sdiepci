@@ -91,71 +91,71 @@ Candidature envoyée via le site SDIEP`,d=`https://wa.me/2250574378201?text=${en
  Plomberie - Sanitaire et tuyauterie
  Vitrerie - Fenêtres et portes vitrées
  Menuiserie - Bois et aluminium
-🏗️ Carrelage - Sol et mural
+ Carrelage - Sol et mural
 
 Que souhaitez-vous savoir sur l'un de ces services ?`:g.includes("prix")||g.includes("tarif")||g.includes("coût")||g.includes("devis")?`Nos tarifs varient selon la nature et l'ampleur du projet. Pour obtenir un devis gratuit et personnalisé :
 
 📱 WhatsApp : +225 05 74 37 82 01
 📞 Téléphone : +225 05 74 37 82 01
-📧 Email : contact@sdiep.ci
+📧 Email : sdiepcotedivoire@gmail.com
 
 Nous répondons sous 24h !`:g.includes("électric")||g.includes("électriq")||g.includes("courant")?`Notre service électricité comprend :
 
  Installation électrique complète
  Mise aux normes
-✅ Tableaux électriques
-✅ Éclairage intérieur/extérieur
-✅ Domotique
-✅ Dépannage d'urgence
+ Tableaux électriques
+ Éclairage intérieur/extérieur
+ Domotique
+ Dépannage d'urgence
 
 Contactez-nous pour votre projet électrique !`:g.includes("peinture")||g.includes("peint")||g.includes("couleur")?`Notre service peinture inclut :
 
  Peinture intérieure (murs, plafonds)
  Peinture extérieure (façades)
-🎨 Peinture décorative
-🎨 Enduit et finitions
-🎨 Conseils en décoration
+ Peinture décorative
+ Enduit et finitions
+ Conseils en décoration
 
 Qualité garantie avec des peintures professionnelles !`:g.includes("plomb")||g.includes("eau")||g.includes("sanitaire")||g.includes("robinet")?`Notre service plomberie couvre :
 
  Installation sanitaire complète
  Tuyauterie et évacuation
-🚰 Salles de bain clé en main
-🚰 Cuisines équipées
-🚰 Dépannage et réparation
-🚰 Détection de fuites
+ Salles de bain clé en main
+ Cuisines équipées
+ Dépannage et réparation
+ Détection de fuites
 
 Interventions rapides garanties !`:g.includes("menuiser")||g.includes("porte")||g.includes("fenêtre")||g.includes("placard")?`Notre service menuiserie propose :
 
  Portes intérieures et extérieures
  Fenêtres bois et aluminium
-🪚 Placards sur mesure
-🪚 Agencement intérieur
-🪚 Meubles personnalisés
-🪚 Parquet et lambris
+ Placards sur mesure
+ Agencement intérieur
+ Meubles personnalisés
+ Parquet et lambris
 
 Du sur-mesure de qualité !`:g.includes("carrelage")||g.includes("carreau")||g.includes("sol")?`Notre service carrelage comprend :
 
  Carrelage sol et mural
  Faïence salle de bain
-🏗️ Terrasses et extérieurs
-🏗️ Joints et finitions
-🏗️ Rénovation de carrelage
+ Terrasses et extérieurs
+ Joints et finitions
+ Rénovation de carrelage
 
 Pose professionnelle garantie !`:g.includes("vitre")||g.includes("verre")||g.includes("vitrage")?`Notre service vitrerie inclut :
 
  Vitres et miroirs
  Double vitrage
  Garde-corps en verre
-🪟 Portes vitrées
-🪟 Verrières d'intérieur
-🪟 Remplacement d'urgence
+ Portes vitrées
+ Verrières d'intérieur
+ Remplacement d'urgence
 
 Sécurité et esthétique !`:g.includes("contact")||g.includes("appel")||g.includes("téléphone")||g.includes("whatsapp")?`Contactez SDIEP :
 
  WhatsApp : +225 05 74 37 82 01
  Téléphone : +225 05 74 37 82 01
-📧 Email : contact@sdiep.ci
+📧 Email : sdiepcotedivoire@gmail.com
 📍 Abidjan, Côte d'Ivoire
 
 ⏰ Lundi - Samedi : 8h - 18h
@@ -165,22 +165,22 @@ Nous sommes à votre écoute !`:g.includes("zone")||g.includes("où")||g.include
 
  Cocody, Plateau, Marcory
  Yopougon, Abobo, Adjamé
-📍 Riviera, Angré, Deux-Plateaux
-📍 Bingerville et zones limitrophes
+ Riviera, Angré, Deux-Plateaux
+ Bingerville et zones limitrophes
 
 Appellez-nous pour confirmer votre zone !`:g.includes("durée")||g.includes("délai")||g.includes("temps")||g.includes("combien de")?`Les délais dépendent du projet :
 
  Petits travaux : 1-3 jours
  Rénovations moyennes : 1-2 semaines
-🏢 Gros projets : 1-6 mois
+ Gros projets : 1-6 mois
 
 Nous établissons un planning précis après étude de votre projet !`:g.includes("garantie")||g.includes("garanti")?`SDIEP s'engage :
 
  Garantie 1 an sur tous les travaux
  Service après-vente réactif
-✅ Matériaux de qualité certifiés
-✅ Artisans qualifiés et expérimentés
-✅ Assurance décennale
+ Matériaux de qualité certifiés
+ Artisans qualifiés et expérimentés
+ Assurance décennale
 
 Votre satisfaction est notre priorité !`:g.includes("urgence")||g.includes("urgent")||g.includes("dépannage")?`Service d'urgence SDIEP :
 
@@ -194,18 +194,18 @@ Nous intervenons rapidement !`:g.includes("projet")||g.includes("réalisation")|
 
  Villas résidentielles
  Immeubles commerciaux
-🏪 Boutiques et magasins
-🏨 Hôtels et restaurants
-🏭 Locaux professionnels
+ Boutiques et magasins
+ Hôtels et restaurants
+ Locaux professionnels
 
 Consultez notre portfolio pour voir nos réalisations !`:g.includes("paiement")||g.includes("payer")||g.includes("mode")?`Modalités de paiement SDIEP :
 
  Espèces
  Virement bancaire
  Mobile Money (Orange, MTN, Moov)
-💳 Chèque
+ Chèque
 
-📋 Possibilité de paiement échelonné selon le projet
+ Possibilité de paiement échelonné selon le projet
 
 Contactez-nous pour plus de détails !`:g.includes("gratuit")||g.includes("estimation")?`Oui ! Le devis SDIEP est :
 
@@ -227,7 +227,7 @@ N'hésitez pas si vous avez d'autres questions.
 
 Pour aller plus loin :
  +225 05 74 37 82 01
- contact@sdiep.ci`:`Je peux vous renseigner sur :
+ sdiepcotedivoire@gmail.com`:`Je peux vous renseigner sur :
 
  Nos services (électricité, peinture, plomberie, etc.)
  Tarifs et devis gratuit
